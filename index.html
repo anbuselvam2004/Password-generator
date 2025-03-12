@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-cont">
+            <div class="heading">
+                <h1 class="gen">Generate a</h1>
+                <h1 class="pass">random password</h1>
+            </div>
+            <h3>Never use an insecure password again.</h3>
+        </div>
+        <div class="pass-type">
+            <input type="number" class="length" id="len" placeholder="Length of the password">
+            <h3>By default it generate all the combinations of the letters, numbers and symbols</h3>
+            <div class="option">
+                <h4>Alphabets</h4>
+                <label class="switch">
+                    <input type="checkbox" class="toggle-check" id="toggle-alpha">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="option">
+                <h4>Numbers</h4>
+                <label class="switch">
+                    <input type="checkbox" class="toggle-check" id="toggle-num">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="option">
+                <h4>Symbols</h4>
+                <label class="switch">
+                    <input type="checkbox" class="toggle-check" id="toggle-symbol">
+                    <span class="slider round"></span>
+
+                </label>
+
+            </div>
+        </div>
+        <div class="button-cont">
+            <button class="generate-button" onclick="generate()">Generate passwords</button>
+        </div>
+        <hr>
+        <p id="copy"></p>
+        <div class="inp">
+            <input type="text" id="inp1">
+            <input type="text" id="inp2">
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
